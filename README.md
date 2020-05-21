@@ -1,2 +1,2 @@
 # CodeIgniter_API
-Latihan pertama membuat aplikasi Public API
+Latihan membuat aplikasi Public API
