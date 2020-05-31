@@ -22,6 +22,6 @@
   		</div>
   	</div>
 
-	<div class="row mt-4" id="anime-list" name="anime"></a>
+	<div class="row mt-4" id="anime-list"></a>
 		
 	</div>

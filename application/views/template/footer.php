@@ -65,7 +65,7 @@
                       <h5 class="card-title">`+ data.title +`</h5>
                       <p class="card-text">Rating `+ data.score +`</p>
                       <a href="`+ data.url +`" class="btn btn-primary">Lihat selengkapnya</a>
-                      <a href="#" class="btn btn-secondary mt-2" name="tambahkan">Tambahkan</a>
+                      <a href="#" class="btn btn-secondary mt-2" name="tambah" id="tambah" data-mal_id="`+ data.mal_id +`">Tambahkan</a>
                     </div>
                   </div>
                 </div>
@@ -85,6 +85,27 @@
       if (e.which === 13) {
         searchAnime();
       }
+    });
+    $('#anime-list').on('click', '#tambah', function() {
+      var mal_id = $(this).data('mal_id');
+      var url = 'https://api.jikan.moe/v3/anime/'+ mal_id; 
+      $.getJSON(url, function(hasil){
+        console
+      });
+      
+        // $.ajax({
+        //   url: url,
+        //   type: 'get',
+        //   dataType: 'json',
+        //   data: {
+        //     'image': image
+        //   }
+        //   success: function(hasil) {
+        //     let image = hasil.image_url;
+        //     let title = hasil.title;
+        //     let score = hasil.score;
+        //   }
+        // });
     });
   </script>
 </body>
