@@ -8,7 +8,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; BookMAL <?= date('Y'); ?></span>
+            <span>Copyright &copy; CI Public API <?= date('Y'); ?></span>
           </div>
         </div>
       </footer>
@@ -36,57 +36,14 @@
   <!-- Bootstrap core JavaScript-->
   <script src="<?= base_url('assets'); ?>/js/jquery.js"></script>
   <script src="<?= base_url('assets'); ?>/js/bootstrap.bundle.js"></script>
+  <script src="<?= base_url('assets'); ?>/js/bootstrap.js"></script>
 
   <!-- Core plugin JavaScript-->
   <script src="<?= base_url('assets'); ?>/js/jquery.easing.js"></script>
 
   <!-- Custom scripts for all pages-->
   <script src="<?= base_url('assets'); ?>/js/sb-admin-2.js"></script>
-  <script>
-    function searchAnime() {
-      $('#anime-list').html('');
-
-      $.ajax({
-        url: 'https://api.jikan.moe/v3/search/anime',
-        type: 'get',
-        dataType: 'json',
-        data: {
-            'q': $('#search').val(),
-            'limit': 10,
-        },
-        success: function(result) {
-          let anime = result.results;
-            $.each(anime, function(i, data) {
-              $('#anime-list').append(`
-                <div class="col-sm-3">
-                  <div class="card mb-3">
-                    <img src="`+ data.image_url +`" class="card-img-top">
-                    <div class="card-body">
-                      <h5 class="card-title">`+ data.title +`</h5>
-                      <p class="card-text">Rating `+ data.score +`</p>
-                      <a href="`+ data.url +`" class="btn btn-primary">Lihat selengkapnya</a>
-                      <a href="#" class="btn btn-secondary mt-2" name="tambah" id="tambah" data-mal_id="`+ data.mal_id +`">Tambahkan</a>
-                    </div>
-                  </div>
-                </div>
-                `);
-            });
-          $('#search').val('');
-        }
-      });
-    }
-
-
-    $('#search-button').on('click', function() {
-      searchAnime();
-    });
-
-    $('#search').on('keyup', function(e) {
-      if (e.which === 13) {
-        searchAnime();
-      }
-    });
-  </script>
+  <script src="<?= base_url('assets'); ?>/js/ajax_anime.js"></script>
 </body>
 
 </html>

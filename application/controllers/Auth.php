@@ -4,6 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Auth extends CI_Controller {
 
 	public function index() {
+		if ($this->session->userdata('email')) {
+			redirect('tools/find');
+		}
 		$this->form_validation->set_rules('email', 'Email', 'required|trim', [
 			'required' => 'Kolom harus diisi!'
 		]);
@@ -43,6 +46,10 @@ class Auth extends CI_Controller {
 	}
 
 	public function register() {
+		if ($this->session->userdata('email')) {
+			redirect('tools/find');
+		}
+		
 		$this->form_validation->set_rules('username', 'Username', 'required|trim', [
 			'required' => 'Kolom harus diisi!'
 		]);

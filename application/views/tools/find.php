@@ -8,17 +8,15 @@
 
   	<!-- Topbar Search -->
   	<div class="row">
-  		<div class="col-md">
-		    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-		        <div class="input-group">
-		            <input type="text" class="form-control bg-light border-0 small" placeholder="Search Anime..." id="search">
-		            <div class="input-group-append">
-		                <button class="btn btn-primary" id="search-button" type="button">
-		                  <i class="fas fa-search fa-sm"></i>
-		                </button>
-		            </div>
-		        </div>
-		    </form>	
+  		<div class="col-md-5">
+		    <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Cari anime" id="search">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="search-button">
+                    <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
   		</div>
   	</div>
 
