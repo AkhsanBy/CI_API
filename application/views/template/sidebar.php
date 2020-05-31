@@ -24,11 +24,6 @@
           <i class="fas fa-fw fa-search"></i>
           <span>Find Anime</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('tools/bookmark'); ?>">
-          <i class="fas fa-fw fa-book"></i>
-          <span>Bookmark</span></a>
-      </li>
       
       <!-- Divider -->
       <hr class="sidebar-divider"> 

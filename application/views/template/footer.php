@@ -52,7 +52,7 @@
         dataType: 'json',
         data: {
             'q': $('#search').val(),
-            'limit': 5,
+            'limit': 10,
         },
         success: function(result) {
           let anime = result.results;
@@ -85,27 +85,6 @@
       if (e.which === 13) {
         searchAnime();
       }
-    });
-    $('#anime-list').on('click', '#tambah', function() {
-      var mal_id = $(this).data('mal_id');
-      var url = 'https://api.jikan.moe/v3/anime/'+ mal_id; 
-      $.getJSON(url, function(hasil){
-        console
-      });
-      
-        // $.ajax({
-        //   url: url,
-        //   type: 'get',
-        //   dataType: 'json',
-        //   data: {
-        //     'image': image
-        //   }
-        //   success: function(hasil) {
-        //     let image = hasil.image_url;
-        //     let title = hasil.title;
-        //     let score = hasil.score;
-        //   }
-        // });
     });
   </script>
 </body>
