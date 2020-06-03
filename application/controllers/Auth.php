@@ -33,7 +33,7 @@ class Auth extends CI_Controller {
 						'role_id' => $emaildb['role_id']
 					];
 					$this->session->set_userdata($data);
-					redirect('tools/find');
+					redirect('home/index');
 				} else {
 					$this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">Password salah!', '</div>');
 					redirect('auth');

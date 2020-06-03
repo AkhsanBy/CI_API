@@ -21,7 +21,7 @@ function searchAnime() {
                       <div class="card-body">
                         <h5 class="card-title">`+ data.title +`</h5>
                         <p class="card-text">Rating `+ data.score +`</p>
-                        <a href="`+ data.url +`" class="btn btn-primary">Lihat selengkapnya</a>
+                        <a href="`+ data.url +`" target="_blank" class="btn btn-primary">Lihat selengkapnya</a>
                       </div>
                     </div>
                   </div>

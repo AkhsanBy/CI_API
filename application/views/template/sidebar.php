@@ -8,6 +8,17 @@
         </div>
       </a>
 
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Home
+      </div>
+
+      <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('home/index'); ?>">
+          <i class="fas fa-fw fa-home"></i>
+          <span>Home</span></a>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider">
       
@@ -17,9 +28,14 @@
       </div>
 
       <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('tools/find'); ?>">
+        <a class="nav-link" href="<?= base_url('tools/findAnime'); ?>">
           <i class="fas fa-fw fa-search"></i>
           <span>Find Anime</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('tools/virusCorona'); ?>">
+          <i class="fas fa-fw fa-search"></i>
+          <span>Data Virus Corona</span></a>
       </li>
       
       <!-- Divider -->

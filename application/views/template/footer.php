@@ -44,6 +44,7 @@
   <!-- Custom scripts for all pages-->
   <script src="<?= base_url('assets'); ?>/js/sb-admin-2.js"></script>
   <script src="<?= base_url('assets'); ?>/js/ajax_anime.js"></script>
+  <script src="<?= base_url('assets'); ?>/js/ajax_corona.js"></script>
 </body>
 
 </html>

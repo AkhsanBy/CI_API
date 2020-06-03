@@ -16,6 +16,7 @@
   <script src="<?= base_url('assets'); ?>/js/all.js"></script>
   <!-- Custom styles for this template-->
   <link href="<?= base_url('assets'); ?>/css/sb-admin-2.css" rel="stylesheet">
+  <link href="<?= base_url('assets'); ?>/css/bootstrap.css" rel="stylesheet">
 
 </head>
 
