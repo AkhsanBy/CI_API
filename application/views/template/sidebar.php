@@ -35,7 +35,12 @@
       <li class="nav-item">
         <a class="nav-link" href="<?= base_url('tools/virusCorona'); ?>">
           <i class="fas fa-fw fa-search"></i>
-          <span>Data Virus Corona</span></a>
+          <span>Data Covid19 - Indonesia</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?= base_url('tools/virusCorona'); ?>">
+          <i class="fas fa-fw fa-search"></i>
+          <span></span></a>
       </li>
       
       <!-- Divider -->
