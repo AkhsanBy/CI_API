@@ -9,7 +9,7 @@
         <div class="form-group">
           <label for="pilih">Pilih Provinsi..</label>
           <select class="form-control" id="pilih">
-            <option>Default - Indonesia</option>
+            <option>Pilih..</option>
           </select>
         </div>
       </form>

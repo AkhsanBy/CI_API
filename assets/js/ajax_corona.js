@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function covidIndonesia() {
     $.getJSON('https://cors-anywhere.herokuapp.com/api.kawalcorona.com/indonesia', function(result) {
         let indoText = result[0].name;
         let positif = result[0].positif;
@@ -24,7 +24,7 @@ $(document).ready(function() {
             </div>    
         `);
     });
-})
+}
 
 $.getJSON('https://cors-anywhere.herokuapp.com/api.kawalcorona.com/indonesia/provinsi', function(result) {
     let json = result;

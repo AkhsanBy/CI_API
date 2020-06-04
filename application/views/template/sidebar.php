@@ -38,9 +38,9 @@
           <span>Data Covid19 - Indonesia</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('tools/virusCorona'); ?>">
+        <a class="nav-link" href="<?= base_url('tools/cariMusik'); ?>">
           <i class="fas fa-fw fa-search"></i>
-          <span></span></a>
+          <span>Cari Musik</span></a>
       </li>
       
       <!-- Divider -->
